@@ -1,0 +1,114 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.476 !important;
+}
+
+
+.new-content-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+#banner {
+  background: url(../images/banner_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.bg-olive {
+	background: #719e9d;
+}
+
+.image-container-center{
+    margin-bottom: 20px;
+    margin-top: 20px;
+		display: flex;
+		justify-content: center;
+}
+
+
+.text-container{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+nav .navbar-default .navbar-nav a.active{
+color:white;
+border-bottom:3px solid orange;
+}
+
+
+
+@media (min-width: 768px) {
+  .standard-text{
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+  .small-text {
+    font-size: 15px;
+  }
+}
+
+ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .standard-text{
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+  .small-text {
+    font-size: 13px;
+  }
+}
+
+
+.white-font {
+  color: #FFFFFF;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.vcenter {
+      align-items:center;
+}
+
+/* Carousel dark indicators */
+/* Add an extra .carousel parent class to increase specifity
+   avoiding the use of !important flag. */
+.carousel {
+  padding-bottom: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+
+.carousel-container {
+  height:350px;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel .carousel-indicators li {
+  background-color: #fff;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #444;
+}

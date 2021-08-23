@@ -93,6 +93,18 @@ ul {
   padding-right: 80px;
 }
 
+@media (min-width: 400px) {
+  .logo {
+    width: 280px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 200px;
+  }
+}
+
 
 
 .carousel-container {

@@ -1,7 +1,7 @@
 ---
 consultant: Simon Funke, Timo Klock
 title: Corona Tracing with Smittestopp
-image: virus.jpg
+image: virus_resized.jpg
 position: 1
 skills:
   - technical_leadership

@@ -30,6 +30,11 @@
 	background: #719e9d;
 }
 
+.project-image {
+  width: 100%;
+  max-width:250px;
+}
+
 .image-container-center{
     margin-bottom: 20px;
     margin-top: 20px;
@@ -65,6 +70,10 @@ ul {
   padding-left: 20px;
 }
 
+.project-skill {
+  min-width:100px;
+}
+
 @media (max-width: 768px) {
   .standard-text{
     font-size: 16px;
@@ -74,6 +83,7 @@ ul {
     font-size: 13px;
   }
 }
+
 
 
 .white-font {
@@ -93,8 +103,8 @@ ul {
    avoiding the use of !important flag. */
 .carousel {
   padding-bottom: 60px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .logo {
@@ -120,11 +130,6 @@ ul {
   }
 }
 
-
-
-.carousel-container {
-  height:370px;
-}
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {

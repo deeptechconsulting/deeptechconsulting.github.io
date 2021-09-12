@@ -115,51 +115,47 @@ subtitle: " "
         </ol>
         <div class="carousel-inner">
             {% assign ordered_projects = site.projects | sort:"position" %}
-            {% for project in ordered_projects limit:10%}
+            {% for project in ordered_projects limit:10 %}
             {% if project.position == 1 %}
               <div class="carousel-item active">
             {% else %}
               <div class="carousel-item">
             {% endif %}
-              <div class="text-container">
-                <h4 class="text-center font-bold"> {{ project.title }} </h4>
-              </div>
-              <div class="row vcenter text-center">
-                <div class="col-lg-12 col-xl-5 carousel-container">
-                  <div class="container-md mb-3">
-                    <img class="img-responsive center-block" src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="{{project.title}}"" width=250>
-                  </div>
-                  <!-- <div class="col-10 offset-1">
-                    <hr>
-                  </div> -->
-                  <div class="container-md">
-                    <h5 class="text-center font-bold"> Required Expertise </h5>
-                    <div class="row justify-content-center">
+            <div class="text-container">
+              <h4 class="text-center font-bold"> {{ project.title }} </h4>
+            </div>
+            <div class="row vcenter text-center">
+              <div class="col-lg-12 col-xl-5 carousel-container">
+                <div class="container-md mb-3">
+                  <img class="project-image img-responsive center-block" src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="{{project.title}}">
+                </div>
+                <div class="container-md">
+                  <h5 class="text-center font-bold"> Required Expertise </h5>
+                  <div class="row justify-content-center">
                     {% for skill in project.skills limit: 3%}
                     {% assign match_skill = site.skills
                       | where_exp: "match_skill", "match_skill.ident == skill"
                       | first %}
-                    <div class="col-4">
+                    <div class="col-4 project-skill">
                       <div class="d-flex align-items-center justify-content-center">
                         <i class="fa fa-{{ match_skill.fa-icon }} fa-2x"></i>
-                        <!-- <img class="img-responsive mx-auto d-block" src="{{ site.baseurl }}/assets/images/{{ skill.inverted_image }}" alt="Machine Learning" width="40"> -->
                       </div>
                       <div class="text-container">
-                       <p class="small-text text-center">
+                        <p class="small-text text-center">
                         {{ match_skill.name }}
-                       </p>
+                        </p>
                       </div>
                     </div>
-                    {% endfor %}
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-xl-7 carousel-container">
-                  <div class="carousel-container container-md standard-text">
-                    {{ project.content}}
+                  {% endfor %}
                   </div>
                 </div>
               </div>
+              <div class="col-lg-12 col-xl-7">
+                <div class="container-md standard-text">
+                  {{ project.content}}
+                </div>
+              </div>
+            </div>
             </div>
             {% endfor %}
         </div>

@@ -12,7 +12,9 @@
   padding-bottom: 30px;
 }
 
-
+.navbar-toggler-container {
+  max-width: 20%;
+}
 
 #banner {
   background: url(../images/banner_background_resized.jpg);
@@ -41,11 +43,12 @@
     margin-bottom:20px;
 }
 
-nav .navbar-default .navbar-nav a.active{
-color:white;
-border-bottom:3px solid orange;
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
 
 
 @media (min-width: 768px) {
@@ -94,6 +97,17 @@ ul {
   padding-right: 80px;
 }
 
+.logo {
+  max-width:95%;
+}
+
+.logo-container {
+  max-width:70%;
+}
+
+.navbar-collapsed-container {
+  max-width: 25%;
+}
 @media (min-width: 400px) {
   .logo {
     width: 280px;

@@ -26,6 +26,14 @@
   min-height: 500px;
 }
 
+.btn-custom {
+  color: #212529;
+  background-color: #09736F !important;
+  border-color: #09736F !important;
+  width: 100% !important;
+}
+
+
 .bg-olive {
 	background: #719e9d;
 }

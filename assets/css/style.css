@@ -16,6 +16,7 @@
   max-width: 20%;
 }
 
+
 #banner {
   background: url(../images/banner_background_resized.jpg);
   background-repeat: no-repeat;
@@ -24,6 +25,13 @@
   -o-background-size: cover;
   background-size: cover;
   min-height: 500px;
+}
+
+.btn-custom {
+  color: #212529;
+  background-color: #09736F !important;
+  border-color: #09736F !important;
+  width: 100% !important;
 }
 
 .bg-olive {

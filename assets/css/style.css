@@ -16,6 +16,7 @@
   max-width: 20%;
 }
 
+
 #banner {
   background: url(../images/banner_background_resized.jpg);
   background-repeat: no-repeat;
@@ -32,7 +33,6 @@
   border-color: #09736F !important;
   width: 100% !important;
 }
-
 
 .bg-olive {
 	background: #719e9d;

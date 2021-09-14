@@ -304,9 +304,9 @@ subtitle: " "
 
 <div id="contact" class="container-fluid bg-olive" style="padding-bottom:50px;">
   <div class="row">
-    <div class="col-10 col-sm-8 col-md-4 offset-1 offset-sm-2 offset-md-4">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-0 offset-sm-1 offset-md-2 offset-lg-3">
       <div class="text-container">
-        <h1 class="text-center font-bold white-font"> Having a project in mind? </h1>
+        <h1 class="text-center font-bold white-font"> Have a project in mind? </h1>
         <!-- <p class="standard-text text-center white-font">
           We are looking for new projects and partners. If our expertise fits your needs, do not hesitate to contact us .
         </p> -->
@@ -315,36 +315,46 @@ subtitle: " "
   </div>
 
   <div class="row" style="padding-bottom:50px;">
-    <div class="col-10 col-sm-8 col-md-4 offset-1 offset-sm-2 offset-md-4">
-      <form action="endpoint" method="POST">
-        <div class="form-group">
-          <label for="inputDescription" class="text-white">Project description or message </label>
-          <textarea class="form-control" id="inputDescription" placeholder="(Required) Keep it short - plenty of time to discuss later!" rows=5  required></textarea>
-        </div>
-        <div class="form-group">
-          <label for="inputTechStack" class="text-white">Tech stack information</label>
-          <input type="text" class="form-control" id="inputTechStack" aria-describedby="techStackHelp" placeholder="(Optional)">
-          <small id="techStackHelp" class="form-text" style="color:lightgrey;">Comma separated list of technology involved in the project (if prescribed) <br>Example: Python, Tensorflow, Azure Functions, SQL</small>
-        </div>
-        <div class="form-group">
-          <label for="inputTimeline" class="text-white">Timeline information</label>
-          <input type="text" class="form-control" id="inputTimeline" aria-describedby="timelinehelp" placeholder="(Optional)">
-          <small id="timelinehelp" class="form-text" style="color:lightgrey;">Providing some optional timeline information about the project <br>Example: 3 month starting no later than 01.01.2022</small>
-        </div>
-        <div class="form-group">
-          <label for="inputName" class="text-white">Name</label>
-          <input type="text" class="form-control" id="inputName" placeholder="(Required)" required>
-        </div>
-        <div class="form-group">
-          <label for="inputEmail" class="text-white">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="(Required)" required>
-        </div>
-        <div class="form-group">
-          <label for="inputPhone" class="text-white">Mobile</label>
-          <input type="tel" class="form-control" id="inputPhone" placeholder="(Required)" required>
-        </div>
-        <button type="submit" class="btn btn-primary btn-custom">Submit</button>
-      </form>
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-0 offset-sm-1 offset-md-2 offset-lg-3">
+      <div id="project-form-container">
+        <form action="https://formspree.io/f/mdoybaab" method="POST" id="project_form">
+          <div class="form-group">
+            <!-- <label for="inputDescription" class="text-white">Project description or message </label> -->
+            <textarea class="form-control" name="inputDescription" placeholder="Project description or message (required)" rows=4  required></textarea>
+            <small id="techStackHelp" class="form-text" style="color:lightgrey;">Keep it short - plenty of time to discuss later!</small>
+          </div>
+          <div class="form-group">
+            <!-- <label for="inputTechStack" class="text-white">Tech stack information</label> -->
+            <input type="text" class="form-control" name="inputTechStack" aria-describedby="techStackHelp" placeholder="Tech stack info (optional)">
+            <small id="techStackHelp" class="form-text" style="color:lightgrey;">Comma separated list of technology involved in the project (if applicable) <br>Example: Python, Tensorflow, Azure Functions, SQL</small>
+          </div>
+          <div class="form-group">
+            <!-- <label for="inputTimeline" class="text-white">Timeline information</label> -->
+            <input type="text" class="form-control" name="inputTimeline" aria-describedby="timelinehelp" placeholder="Timeline info (optional)">
+            <small id="timelinehelp" class="form-text" style="color:lightgrey;">Provide some optional timeline information about the project <br>Example: 3 month starting no later than 01.01.2022</small>
+          </div>
+          <div class="form-group">
+            <!-- <label for="inputName" class="text-white">Name</label> -->
+            <input type="text" class="form-control" name="inputName" placeholder="Name (required)" required>
+          </div>
+          <div class="form-group">
+            <!-- <label for="inputEmail" class="text-white">Email</label> -->
+            <input type="email" class="form-control" name="inputEmail" placeholder="Email (required)" required>
+          </div>
+          <div class="form-group">
+            <!-- <label for="inputPhone" class="text-white">Mobile</label> -->
+            <input type="tel" class="form-control" name="inputPhone" placeholder="Mobile (required)" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-custom">Submit</button>
+        </form>
+      </div>
+      <!-- <div id="form-send-response" class="alert-success" role="alert" display="none;">
+        <h4 class="text-center">Thank you for contacting us, we will come back to you shortly!</h4>
+      </div>
+      <div id="form-send-response-negative" class="alert alert-danger" role="alert" display="none;">
+        <h4 class="text-center">Something went wrong, try again or contact 
+          us directly using the email or phone number below</h4>
+      </div> -->
     </div>
   </div>
 

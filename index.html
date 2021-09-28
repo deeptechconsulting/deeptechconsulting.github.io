@@ -4,406 +4,371 @@ headline: " "
 subtitle: " "
 ---
 
-
-<div class="new-content-block bg-olive" id="about">
-  <div class="row">
-    <div class="col-12 col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-2">
-        <div class="container standard-text white-font">
-          <h3 class="text-white text-center font-bold"> Mission </h3>
-          <p>
-            We are a team of tech enthusiastic people with expert knowledge
-            on selected topics such as machine learning, data science, and scientific computing.
-            Our goal is to support innovative companies in facing their challenges
-            by leveraging modern deep-tech solutions. We excel in agile working environments
-            that are open to new ideas, and we aim to form mutually fruitful and lasting
-            relationships with our clients. Our vision is to build a reputable on-demand R&D service
-            provider.
-          </p>
-        </div>
+<section class="bg-olive text-white" id ="about">
+  <div class="container new-content-block">
+    <div class="row">
+      <div class="col-sm-12 col-md-10 offset-md-1 col-lg-5 offset-lg-1">
+        <h3> Mission </h3>
+        <p class="standard-text">
+          We are a team of tech enthusiastic people with expert knowledge
+          on selected topics such as machine learning, data science, and scientific computing.
+          Our goal is to support innovative companies in facing their challenges
+          by leveraging modern deep-tech solutions. We excel in agile working environments
+          that are open to new ideas, and we aim to form mutually fruitful and lasting
+          relationships with our clients. Our vision is to build a reputable on-demand R&D service
+          provider.
+        </p>
       </div>
-      <div class="col-12 col-sm-12  col-md-10 offset-md-1 offset-lg-0 col-lg-4">
-        <div class="container">
-          <h3 class="text-white text-center font-bold"> Services </h3>
-          <div class="row">
-            <div class="col-3 col-sm-2 d-flex align-items-center justify-content-center">
-              <div>
-                <!-- <img src="{{ site.baseurl }}/assets/images/leader_inverted.png" alt="Innovate" style="width: 35px;"> -->
-                <i class="fa fa-magic fa-2x text-white"></i>
-              </div>
+      <div class="col-sm-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0">
+        <h3> Services </h3>
+        <div class="row">
+          <div class="col-3 col-sm-2 d-flex align-items-center justify-content-center">
+            <div>
+              <i class="fa fa-magic fa-2x"></i>
             </div>
-            <div class="col-9 col-sm-10">
-              <p class="white-font">
-                <b>Innovate:</b> We listen to your business needs, translate them to technological problems, and present modern solutions to approach them.
-              </p>
+          </div>
+          <div class="col-9 col-sm-10">
+            <p>
+              <b>Innovate:</b> We listen to your business needs, translate them to technological problems, and present modern solutions to approach them.
+            </p>
+          </div>
+          <div class="col-3 col-sm-2 d-flex align-items-center justify-content-center">
+            <div>
+              <i class="fa fa-wrench fa-2x"></i>
             </div>
-            <div class="col-3 col-sm-2 d-flex align-items-center justify-content-center">
-              <div>
-                <!-- <img src="{{ site.baseurl }}/assets/images/leader_inverted.png" alt="Build" style="width: 35px;"> -->
-                <i class="fa fa-wrench fa-2x text-white"></i>
-              </div>
+          </div>
+          <div class="col-9 col-sm-10">
+            <p>
+                <b> Build: </b> We build tech products from start to finish, with continuous support. We compensate missing expertise through
+                our rich network of IT experts.
+            </p>
+          </div>
+          <div class="col-3 col-sm-2 d-flex align-items-center justify-content-center">
+            <div>
+              <i class="fa fa-group fa-2x"></i>
             </div>
-            <div class="col-9 col-sm-10">
-              <p class="white-font">
-                  <b> Build: </b> We build tech products from start to finish, with continuous support. We compensate missing expertise through
-                  our rich network of IT experts.
-              </p>
-            </div>
-            <div class="col-3 col-sm-2 d-flex align-items-center justify-content-center">
-              <div>
-                <!-- <img src="{{ site.baseurl }}/assets/images/leader_inverted.png" alt="Build" style="width: 35px;"> -->
-                <i class="fa fa-group fa-2x text-white"></i>
-              </div>
-            </div>
-            <div class="col-9 col-sm-10">
-              <p class="white-font">
-                <b> Lead: </b> We help your in-house development team by supplying ideas, coordinating team efforts,
-                and keeping your business interests in focus.
-              </p>
-            </div>
+          </div>
+          <div class="col-9 col-sm-10">
+            <p>
+              <b> Lead: </b> We help your in-house development team by supplying ideas, coordinating team efforts,
+              and keeping your business interests in focus.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="new-content-block bg-olive" id="expertise">
-  <div class="row">
-    <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-      <h3 class="text-center font-bold text-white"> Main areas of expertise </h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-      <div class="text-container">
-        <div class="row justify-content-center">
-          {% for skill in site.skills %}
-            <div class="col-4 col-sm-2 col-md-2">
-              <div class="d-flex align-items-center justify-content-center">
-                <i class="fa fa-{{ skill.fa-icon }} fa-3x text-white"></i>
-                <!-- <img class="img-responsive mx-auto d-block" src="{{ site.baseurl }}/assets/images/{{ skill.inverted_image }}" alt="Machine Learning" width="40"> -->
-              </div>
-              <div class="text-container">
-               <p class="small-text text-center white-font">
-                {{ skill.name }}
-               </p>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
+<section class="bg-olive text-white" id="expertise">
+  <div class="container new-content-block">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <h3> Main areas of expertise </h3>
       </div>
     </div>
-  </div>
-</div>
-
-
-
-<div class="new-content-block" id="examples">
-  <div class="row">
-    <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-      <h3 class="text-center font-bold"> Project examples </h3>
-      <hr>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            {% assign ordered_projects = site.projects | sort:"position" %}
-            {% for project in ordered_projects limit:10 %}
-            {% if project.position == 1 %}
-              <div class="carousel-item active">
-            {% else %}
-              <div class="carousel-item">
-            {% endif %}
-            <div class="text-container">
-              <h4 class="text-center font-bold"> {{ project.title }} </h4>
-            </div>
-            <div class="row vcenter text-center">
-              <div class="col-lg-12 col-xl-5 carousel-container">
-                <div class="container-md mb-3">
-                  <img class="project-image img-responsive center-block" src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="{{project.title}}">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="text-container">
+          <div class="row justify-content-center">
+            {% for skill in site.skills %}
+              <div class="col-4 col-sm-4 col-md-2">
+                <div class="d-flex align-items-center justify-content-center">
+                  <i class="fa fa-{{ skill.fa-icon }} fa-3x"></i>
                 </div>
-                <div class="container-md">
-                  <h5 class="text-center font-bold"> Required Expertise </h5>
-                  <div class="row justify-content-center">
-                    {% for skill in project.skills limit: 3%}
-                    {% assign match_skill = site.skills
-                      | where_exp: "match_skill", "match_skill.ident == skill"
-                      | first %}
-                    <div class="col-4 project-skill">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <i class="fa fa-{{ match_skill.fa-icon }} fa-2x"></i>
+                <div class="text-container">
+                  <p class="small-text text-center">
+                    {{ skill.name }}
+                  </p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="new-content-block" id="examples">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <h3> Project examples </h3>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+              {% assign ordered_projects = site.projects | sort:"position" %}
+              {% for project in ordered_projects limit:10 %}
+              {% if project.position == 1 %}
+                <div class="carousel-item active">
+              {% else %}
+                <div class="carousel-item">
+              {% endif %}
+              <div class="text-container">
+                <h4> {{ project.title }} </h4>
+              </div>
+              <div class="row vcenter text-center">
+                <div class="col-lg-12 col-xl-5 carousel-container">
+                  <div class="container-md mb-3">
+                    <img class="project-image img-responsive center-block" src="{{ site.baseurl }}/assets/images/{{ project.image }}" alt="{{project.title}}">
+                  </div>
+                  <div class="container-md">
+                    <h5 class="text-center font-bold"> Required Expertise </h5>
+                    <div class="row justify-content-center">
+                      {% for skill in project.skills limit: 3%}
+                      {% assign match_skill = site.skills
+                        | where_exp: "match_skill", "match_skill.ident == skill"
+                        | first %}
+                      <div class="col-4 project-skill">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <i class="fa fa-{{ match_skill.fa-icon }} fa-2x"></i>
+                        </div>
+                        <div class="text-container">
+                          <p class="small-text text-center">
+                          {{ match_skill.name }}
+                          </p>
+                        </div>
                       </div>
-                      <div class="text-container">
-                        <p class="small-text text-center">
-                        {{ match_skill.name }}
-                        </p>
-                      </div>
+                    {% endfor %}
                     </div>
-                  {% endfor %}
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-7">
+                  <div class="container-md standard-text">
+                    {{ project.content}}
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 col-xl-7">
-                <div class="container-md standard-text">
-                  {{ project.content}}
-                </div>
               </div>
-            </div>
-            </div>
-            {% endfor %}
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="new-content-block bg-olive">
-  <div id="team" class="row" >
-    <div class="col-10 col-sm-10 col-md-8 offset-md-2 offset-1">
-        <h2 class="text-center font-bold" style="color: white;"> Founded by an experienced and technically adept team </h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
-      <div class="row">
-      {% for consultant in site.consultants %}
-        <div class="col-12 col-lg-6">
-          <div class="row">
-            <div class="container">
-              <img class="img-responsive mx-auto d-block" src="{{ site.baseurl }}/assets/images/{{ consultant.image }}.png" alt="{{ consultant.name }}" width="230">
-            </div>
+              {% endfor %}
           </div>
-          <div class="row vcenter">
-            <div class="container mx-auto d-block">
-              <h3 class="text-center font-bold white-font">
-                {{ consultant.name }}{% if consultant.academictitle %}, {{ consultant.academictitle }} {% endif %}
-              </h3>
-            </div>
-          </div>
-          <div class="row vcenter">
-            <div class="col-2 offset-4">
-                <a href={{ consultant.linkedin }}> <i class="fab fa-linkedin fa-2x font-bold white-font"></i> </a>
-            </div>
-            <div class="col-2">
-                <a href={{ consultant.github }}> <i class="fab fa-github fa-2x font-bold white-font"></i> </a>
-            </div>
-          </div>
-          <div class="container">
-            <div class="center-block standard-text white-font">
-              {{ consultant.content }}
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="new-content-block" id="techstack">
-  <div class="row">
-    <div class="col-12 col-md-10 col-lg-8 offset-lg-2 offset-md-1">
-      <div class="container standard-text">
-        <h3 class="text-center font-bold"> Selected Tech Stack </h3>
-        <p class="text-center">
-          If applicable in a project, we love to work with Python and its associated frameworks as a primary backend language.
-          However we are not limited by it. Below we give a very <b>non-exhaustive</b> list of tech
-          that we have used in prior projects. Feel to ask us for additional details!
-        </p>
-      </div>
-      <hr>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-10 col-lg-8 offset-0 offset-lg-2 offset-md-1">
-      <div class="row vcenter justify-content-center">
-      {% for tech in site.techstack %}
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 techstack_image_container">
-        <div class="image-container-center">
-          <a href={{ tech.href }}>
-            <img class="mx-auto d-block" src="{{ site.baseurl }}/assets/images/{{ tech.image }}" alt="{{ tech.name }}" width="110">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
           </a>
         </div>
       </div>
-      {% endfor %}
-      </div>
     </div>
   </div>
-</div>
+</section>
 
-
-<div class="new-content-block bg-olive">
-  <div class="row">
-    <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-      <div class="container">
-        <h3 class="text-center white-font font-bold mb-3"> Caught your attention? Step by step to a fruitful collaboration</h3>
+<section class="bg-olive text-white" id="team">
+  <div class="container new-content-block">
+    <div class="row" >
+      <div class="col-12 col-lg-10 offset-lg-1">
+          <h2> Founded by an experienced and technically adept team </h2>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-6 col-lg-3 col-xl-2 offset-xl-2">
-      <div class="container">
-        <h5 class="text-white text-center font-bold"> 1. First contact </h5>
-        <p class="white-font text-center">
-          Contact us via email or phone and let's set up an informal first meeting.
-          The goal is to get to know your company, understand your business needs,
-          and the relevant in-house IT structure.
-        </p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-lg-3 col-xl-2">
-      <div class="container">
-        <h5 class="text-white text-center font-bold"> 2. Brainstorm </h5>
-        <p class="white-font text-center">
-          We brainstorm internally and with you about how we can help your company and about
-          the technical feasibility of potential projects. At the end of this phase we decide on whether to go
-          ahead.
-        </p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-lg-3 col-xl-2">
-      <div class="container">
-        <h5 class="text-white text-center font-bold"> 3. Development </h5>
-        <p class="white-font text-center">
-          Where the fun happens! We implement the project by developing relevant IT components,
-          validating & testing, and iterating. We can work autonomously or as parts of your in-house development team.
-        </p>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-lg-3 col-xl-2">
-      <div class="container">
-        <h5 class="text-white text-center font-bold"> 4. Support </h5>
-        <p class="white-font text-center">
-          Creating value for you is our main goal! We stay in contact to offer continuous support
-          and to educate your IT team with the newly developed IT components, if applicable.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div id="contact" class="container-fluid bg-olive" style="padding-bottom:50px;">
-  <div class="row">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-0 offset-sm-1 offset-md-2 offset-lg-3">
-      <div class="text-container">
-        <h1 class="text-center font-bold white-font"> Have a project in mind? </h1>
-        <!-- <p class="standard-text text-center white-font">
-          We are looking for new projects and partners. If our expertise fits your needs, do not hesitate to contact us .
-        </p> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="row" style="padding-bottom:50px;">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-0 offset-sm-1 offset-md-2 offset-lg-3">
-      <div id="project-form-container">
-        <form action="https://formspree.io/f/mdoybaab" method="POST" id="project_form">
-          <div class="form-group">
-            <!-- <label for="inputDescription" class="text-white">Project description or message </label> -->
-            <textarea class="form-control" name="inputDescription" placeholder="Project description or message (required)" rows=4  required></textarea>
-            <small id="techStackHelp" class="form-text" style="color:lightgrey;">Keep it short - plenty of time to discuss later!</small>
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="row">
+        {% for consultant in site.consultants %}
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="container-fluid">
+                <img class="img-responsive mx-auto d-block" src="{{ site.baseurl }}/assets/images/{{ consultant.image }}.png" alt="{{ consultant.name }}" width="230">
+              </div>
+            </div>
+            <div class="row vcenter">
+              <div class="mx-auto">
+                <h3>
+                  {{ consultant.name }}{% if consultant.academictitle %}, {{ consultant.academictitle }} {% endif %}
+                </h3>
+              </div>
+            </div>
+            <div class="row vcenter">
+              <div class="col-2 offset-4 text-center">
+                  <a href={{ consultant.linkedin }}> <i class="fab fa-linkedin fa-2x font-bold text-white"></i> </a>
+              </div>
+              <div class="col-2 text-center">
+                  <a href={{ consultant.github }}> <i class="fab fa-github fa-2x font-bold text-white"></i> </a>
+              </div>
+            </div>
+            <div class="container">
+              <div class="standard-text">
+                {{ consultant.content }}
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <!-- <label for="inputTechStack" class="text-white">Tech stack information</label> -->
-            <input type="text" class="form-control" name="inputTechStack" aria-describedby="techStackHelp" placeholder="Tech stack info (optional)">
-            <small id="techStackHelp" class="form-text" style="color:lightgrey;">Comma separated list of technology involved in the project (if applicable) <br>Example: Python, Tensorflow, Azure Functions, SQL</small>
-          </div>
-          <div class="form-group">
-            <!-- <label for="inputTimeline" class="text-white">Timeline information</label> -->
-            <input type="text" class="form-control" name="inputTimeline" aria-describedby="timelinehelp" placeholder="Timeline info (optional)">
-            <small id="timelinehelp" class="form-text" style="color:lightgrey;">Provide some optional timeline information about the project <br>Example: 3 month starting no later than 01.01.2022</small>
-          </div>
-          <div class="form-group">
-            <!-- <label for="inputName" class="text-white">Name</label> -->
-            <input type="text" class="form-control" name="inputName" placeholder="Name (required)" required>
-          </div>
-          <div class="form-group">
-            <!-- <label for="inputEmail" class="text-white">Email</label> -->
-            <input type="email" class="form-control" name="inputEmail" placeholder="Email (required)" required>
-          </div>
-          <div class="form-group">
-            <!-- <label for="inputPhone" class="text-white">Mobile</label> -->
-            <input type="tel" class="form-control" name="inputPhone" placeholder="Mobile (required)" required>
-          </div>
-          <button type="submit" class="btn btn-primary btn-custom">Submit nonbinding information - we try to get back quickly</button>
-        </form>
+        {% endfor %}
+        </div>
       </div>
-      <!-- <div id="form-send-response" class="alert-success" role="alert" display="none;">
-        <h4 class="text-center">Thank you for contacting us, we will come back to you shortly!</h4>
-      </div>
-      <div id="form-send-response-negative" class="alert alert-danger" role="alert" display="none;">
-        <h4 class="text-center">Something went wrong, try again or contact 
-          us directly using the email or phone number below</h4>
-      </div> -->
     </div>
   </div>
+</section>
 
-  <div class="row">
-    <div class="col-10 col-sm-8 col-md-4 offset-1 offset-sm-2 offset-md-4">
-      <div class="text-container">
-        <h1 class="text-center font-bold white-font"> Contact </h1>
-        <!-- <p class="standard-text text-center white-font">
-          We are looking for new projects and partners. If our expertise fits your needs, do not hesitate to contact us .
-        </p> -->
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-sm-12 col-md-5 col-lg-4 offset-md-1 offset-lg-2">
-      <div class="container">
-        <i class="fa text-center fa-envelope white-font fa-5x mx-auto d-block" aria-hidden="true"></i>
-      </div>
-      <div class="container">
-        <h5 class="text-center white-font">
-          post@deeptechconsulting.no
-        </h5>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-5 col-lg-4">
-      <div class="container">
-        <i class="fa text-center fa-mobile white-font fa-5x mx-auto d-block" aria-hidden="true"></i>
-      </div>
-      <div class="container">
-        <h5 class="text-center white-font">
-          +47 40 62 55 86
-        </h5>
+<section id="techstack">
+  <div class="container new-content-block">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="container standard-text">
+          <h3 class="text-center font-bold"> Selected Tech Stack </h3>
+          <p class="text-center">
+            If applicable in a project, we love to work with Python and its associated frameworks as a primary backend language.
+            However we are not limited by it. Below we give a very <b>non-exhaustive</b> list of tech
+            that we have used in prior projects. Feel to ask us for additional details!
+          </p>
+        </div>
+        <hr>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4 offset-md-3 offset-lg-4">
-      <div class="text-container">
-        <p class="text-center white-font">
-          DeepTech Consulting AS
-        </p>
-        <p class="text-center white-font">
-          Organisation number: 927 379 147
-        </p>
-        <p class="text-center white-font">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp&nbsp&nbsp Bølerlia 149, 0689 Oslo, Norway
-        </p>
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="row vcenter justify-content-center">
+        {% for tech in site.techstack %}
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="image-container-center">
+            <a href={{ tech.href }}>
+              <img class="mx-auto d-block" src="{{ site.baseurl }}/assets/images/{{ tech.image }}" alt="{{ tech.name }}" width="110">
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="bg-olive text-white text-center">
+  <div class="container new-content-block">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <h3 class="mb-3"> Caught your attention? Step by step to a fruitful collaboration</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-3">
+            <h5> 1. First contact </h5>
+            <p>
+              Contact us via email or phone and let's set up an informal first meeting.
+              The goal is to get to know your company, understand your business needs,
+              and the relevant in-house IT structure.
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h5> 2. Brainstorm </h5>
+            <p>
+              We brainstorm internally and with you about how we can help your company and about
+              the technical feasibility of potential projects. At the end of this phase we decide on whether to go
+              ahead.
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h5> 3. Development </h5>
+            <p>
+              Where the fun happens! We implement the project by developing relevant IT components,
+              validating & testing, and iterating. We can work autonomously or as parts of your in-house development team.
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h5> 4. Support </h5>
+            <p>
+              Creating value for you is our main goal! We stay in contact to offer continuous support
+              and to educate your IT team with the newly developed IT components, if applicable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-olive text-white" id="contact">
+  <div class="container new-content-block">
+    <div class="row">
+      <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
+        <h1> Have a project in mind? </h1>
+      </div>
+    </div>
+
+    <div class="row" style="padding-bottom:50px;">
+      <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
+        <div id="project-form-container">
+          <form action="https://formspree.io/f/mdoybaab" method="POST" id="project_form">
+            <div class="form-group">
+              <!-- <label for="inputDescription" class="text-white">Project description or message </label> -->
+              <textarea class="form-control" name="inputDescription" aria-describedby="descriptionHelp" placeholder="Project description or message (required)" rows=4  required></textarea>
+              <small id="descriptionHelp" class="form-text" style="color:lightgrey;">Keep it short - plenty of time to discuss later!</small>
+            </div>
+            <div class="form-group">
+              <!-- <label for="inputTechStack" class="text-white">Tech stack information</label> -->
+              <input type="text" class="form-control" name="inputTechStack" aria-describedby="techStackHelp" placeholder="Tech stack info (optional)">
+              <small id="techStackHelp" class="form-text" style="color:lightgrey;">Comma separated list of technology involved in the project (if applicable) <br>Example: Python, Tensorflow, Azure Functions, SQL</small>
+            </div>
+            <div class="form-group">
+              <!-- <label for="inputTimeline" class="text-white">Timeline information</label> -->
+              <input type="text" class="form-control" name="inputTimeline" aria-describedby="timelinehelp" placeholder="Timeline info (optional)">
+              <small id="timelinehelp" class="form-text" style="color:lightgrey;">Provide some optional timeline information about the project <br>Example: 3 month starting no later than 01.01.2022</small>
+            </div>
+            <div class="form-group">
+              <!-- <label for="inputName" class="text-white">Name</label> -->
+              <input type="text" class="form-control" name="inputName" placeholder="Name (required)" required>
+            </div>
+            <div class="form-group">
+              <!-- <label for="inputEmail" class="text-white">Email</label> -->
+              <input type="email" class="form-control" name="inputEmail" placeholder="Email (required)" required>
+            </div>
+            <div class="form-group">
+              <!-- <label for="inputPhone" class="text-white">Mobile</label> -->
+              <input type="tel" class="form-control" name="inputPhone" placeholder="Mobile (required)" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-custom">Submit nonbinding information - we try to get back quickly</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
+        <h1> Contact </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-5 col-lg-4 offset-md-1 offset-lg-2">
+        <i class="fa text-center fa-envelope fa-5x mx-auto d-block" aria-hidden="true"></i>
+        <h5> post@deeptechconsulting.no </h5>
+      </div>
+      <div class="col-12 col-md-5 col-lg-4">
+        <i class="fa text-center fa-mobile fa-5x mx-auto d-block" aria-hidden="true"></i>
+        <h5> +47 40 62 55 86 </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
+        <div class="text-container">
+          <p class="text-center">
+            DeepTech Consulting AS
+          </p>
+          <p class="text-center">
+            Organisation number: 927 379 147
+          </p>
+          <p class="text-center">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp&nbsp&nbsp Bølerlia 149, 0689 Oslo, Norway
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

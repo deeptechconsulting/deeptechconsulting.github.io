@@ -19,15 +19,29 @@ h1, h2, h3, h4, h5 {
   max-width: 20%;
 }
 
+@media (max-width: 500px) {
+  .headline {
+    margin-top:100px;
+  }
+}
+
+@media (max-width: 250px) {
+  .headline {
+    margin-top:200px;
+  }
+}
 
 #banner {
   background: url(../images/banner_background_resized.jpg);
-  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-repeat: no-repeat; */
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 500px;
+  /* -moz-background-size: cover; */
+  /* -o-background-size: cover; */
+  /* background-size: cover; */
+  min-height: 600px;
+  width: 100%;
+  height: auto;
 }
 
 .btn-custom {

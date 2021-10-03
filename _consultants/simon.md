@@ -3,7 +3,7 @@ name: Simon Funke
 shortdescription: Expert in scientific computing and leader
 image: simon
 academictitle: PhD
-linkedin: https://www.linkedin.com/in/simon-funke-phd-17861322/
+linkedin: https://www.linkedin.com/in/simon-funke
 github: https://github.com/funsim
 ---
 
